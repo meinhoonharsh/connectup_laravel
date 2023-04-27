@@ -159,13 +159,13 @@ function getCategories()
 
 function getRecentEvents($count = 6)
 {
-    $events = \App\Models\Event::where('active', 1)->orderBy('id', 'desc')->limit($count)->get();
+    $events = \App\Models\Event::where('active', 1)->latest()->limit($count)->get();
     return $events;
 }
 
 function getRecentBlogs($count = 6)
 {
-    $blogs = \App\Models\Blog::where('active', 1)->orderBy('id', 'desc')->limit($count)->get();
+    $blogs = \App\Models\Blog::where('active', 1)->latest()->limit($count)->get();
     return $blogs;
 }
 
