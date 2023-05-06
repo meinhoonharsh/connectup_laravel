@@ -115,7 +115,7 @@ class AppController extends Controller
         page('events');
         $events = Event::where('active', 1)
             ->orderBy('created_at', 'desc')
-            ->get();
+            ->paginate(12);
         $data = [
             'events' => $events,
         ];
@@ -129,6 +129,7 @@ class AppController extends Controller
         $blogs = Blog::where('active', 1)
             ->orderBy('created_at', 'desc')
             ->paginate(12);
+        // return $blogs;
         $data = [
             'blogs' => $blogs,
         ];
