@@ -287,6 +287,10 @@
                 <!-- /EVENT PREVIEW -->
             @endforeach
         </div>
+
+        @helper('pagination', [
+            'paginator' => $events,
+        ])
         <!-- /GRID -->
     </div>
     <!-- /CONTENT GRID -->
