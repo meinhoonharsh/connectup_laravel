@@ -17,24 +17,8 @@ class MailController extends Controller
     {
         $usersjson = '[
             {
-                "email": "amansaurabh127@gmail.com",
-                "name": "Aman Saurabh"
-            },
-            {
-                "email": "rabhijeet544@gmail.com",
-                "name": "Abhijeet Raj "
-            },
-            {
-                "email": "Manishsharma65263@gmail.com",
-                "name": "Manish Kumar"
-            },
-            {
-                "email": "aditya28tripathi@gmail.com",
-                "name": "Aditya Tripathi "
-            },
-            {
-                "email": "ig942002@outlook.com",
-                "name": "Ishan Gupta"
+                "email": "kashishbehal8@gmail.com",
+                "name": "Kashish Behal"
             },
             {
                 "email": "harshprogrammer782@gmail.com",
@@ -42,12 +26,12 @@ class MailController extends Controller
             }
         ]';
 
-        // $usersjson = '[
-        //     {
-        //         "email": "harshprogrammer782@gmail.com",
-        //         "name": "Harsh Vishwakarma"
-        //     }
-        // ]';
+        $usersjson = '[
+            {
+                "email": "harshprogrammer782@gmail.com",
+                "name": "Harsh Vishwakarma"
+            }
+        ]';
 
         $users = json_decode($usersjson, true);
         // return $users;
